@@ -54,7 +54,75 @@
       <section class="card" id="javascript-section">
         <h2>Javascript</h2>
         <ul>
-          <li>Enter your Javascript notes here</li>
+          <li>A variable is a named container that allows us to store data in our code. 
+            You start by declaring a variable with the let keyword, followed by the name you give to the variable: let myVariable </li>
+          <li>Control flow is the order in which a computer executes code in a script. For JavaScript, this will always be from top to bottom of the script.</li>
+          <li>A Boolean is a True/False value. The words true and false are special keywords that don't need quote marks: let myVariable = true;</li>
+          <li>An Array is  is a structure that allows you to store multiple values in a single reference: let myVariable = ['Terran', 'Spencer', 'Skyler', 'Kristel']
+            (this is an array of names that are of string data types) 
+
+            Arrays are useful tools for storing multiple items with different data types in a single variable, but not all arrays must have multiple data types. The array that we will add to our project only contains strings.
+          </li>
+          <li>console.log: We can use the console.log method to output a message to the web console by adding an argument: console.log("Hello world!") this would
+            print hello world to the console in Chrome devtools.
+          </li>
+          <li>if statements: an if statement in a JavaScript file, it will check to see if the condition that we provide is truthy. If it is, then it will do whatever action we ask it to do in between the curly brackets. 
+            If the condition isn't true or has a value that isn't truthy, 
+            then the computer will ignore whatever is in between the curly brackets and move on. Sometimes we want to provide more conditions than just if. 
+            In JavaScript, we can have more than one condition—just like we did in the dishes pseudocode—by using else if, 
+            as demonstrated in the following code example:
+            if (0) {
+              console.log("I'm 0!") // this will always be false
+            }
+            else if (null) {
+              console.log("I'm null!") // this will always be false as well
+            }
+            else if (true) {
+              console.log("I'm true!")
+            }
+            else {
+              console.log("These are all false.")
+            }
+            With this statement we are saying if one of the statements is true print the code inside the {} brackets, else print that all these scenarios are false.
+          </li>
+          <li>For loop: A for loop uses the predictable pattern of indices to perform a task on all the items in an array by allowing a single code block to be executed over and over. Developers must use another statement, such as the conditional 
+            if statement that we just learned, to interrupt the control flow by executing a block of code a specific number of times.
+
+            A for loop contains the following three important statements:
+
+            The first statement determines the starting point for our loop. Since we want to start at the beginning of the array, we declare a variable x and give it a value of 0 
+            (because the first index of an array is always 0), as shown in the following line of code: let i = 0
+
+            The second statement is the condition. As long as the number in the variable x is less than the length of the array, the loop will keep running. This will allow the loop to execute one time for each item in the array. 
+            We use the length built-in array property on our shapes array to express that condition, as shown in the following line of code: i < shapes.length; // this is stating that
+            because i = 0 it is less than the length of the indexes in an array
+
+            The final statement is what allows the array to iterate over each item. Since indices follow a predictable pattern, we know the number increases by 1 each time. The code i++ is a shortcut way of writing x+1. 
+            Now every time the code loops, i will increase by 1, as shown in the following line of code: i++ // this is incrementing the i by 1 each time the loop is gone through
+
+            A for loop starts with—you guessed it—for. So far, our for loop looks like the following code: for(let i = 0; i < shapes.length; i++) {
+              // put in the code that should happen (example: console.log(shapes[i])) // this will print all the shapes in the array to our console without the [] brackets.
+            }
+          </li>
+          <li>Function: a function is simply a set of instructions that tells the computer how to perform a certain task.
+
+            A function is different from a for loop or conditional statement because functions do not automatically execute when the JavaScript file 
+            (in our case, script.js) is run. Instead, you must call a function by name in order to execute it. While that may seem like extra work, 
+            having a block of code that executes only when we call it makes the code more easily reusable, because we can call it as many times as we need. 
+            Being able to call a function to execute it also means you can control where in the control flow a task is executed, or if it is executed at all.
+
+            To create a function, we use the function keyword, similar to how we used the var keyword to declare a new variable. Then we give our function a unique name.
+            We will use this unique name whenever we call the function: function myFunction(){ 
+              console.log("Hello world!") // when we call the function name, this console.log statement will be ran
+            }
+
+            A function's name is followed by parentheses (). Later on, we will define parameters that can be placed inside the parentheses. 
+            For now, just remember that it is important to include the parentheses whenever you write a function.
+
+            To call a function you simply call the name of the function you write the name of the function followed by (), like so: myFunction(); and this 
+            will then run the code inside the function block.
+
+          </li>
         </ul>
       </section>
     </main>
